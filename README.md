@@ -2,6 +2,8 @@
 
 A comprehensive guide to help you choose the right VPS provider. Covers key factors, provider comparisons, and recommendations for different use cases.
 
+> **Last updated: March 2026** — Pricing and availability verified.
+
 ## How to Choose a VPS
 
 ### 1. Server Location
