@@ -128,3 +128,5 @@ MIT
 ---
 
 ⭐ Star this repo if it helped you choose the right VPS!
+
+<!-- updated 2026-03-22 -->
