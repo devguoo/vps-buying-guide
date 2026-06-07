@@ -1,132 +1,65 @@
-# VPS Buying Guide 2026
+# VPS Buying Guide
 
-A comprehensive guide to help you choose the right VPS provider. Covers key factors, provider comparisons, and recommendations for different use cases.
+> Archived repository. This page is kept as a historical VPS buying checklist, not as a live pricing or promotion page.
 
-> **Last updated: March 2026** — Pricing and availability verified.
+This repository was originally created as a general VPS provider buying guide. It is no longer the main maintained guide, because VPS pricing, stock, datacenter availability and promotions change frequently.
 
-## How to Choose a VPS
+For current tools and guides, start here instead:
 
-### 1. Server Location
+| Need | Maintained Resource |
+|---|---|
+| General VPS tools and server resources | [awesome-vps-tools](https://github.com/devguoo/awesome-vps-tools) |
+| BandwagonHost / 搬瓦工 speed test and datacenter notes | [bwg-speed-test](https://github.com/devguoo/bwg-speed-test) |
+| Cloudways pricing and billing notes | [cloudways-pricing](https://github.com/devguoo/cloudways-pricing) |
+| 中文搬瓦工套餐、库存和购买前判断 | [BWH Guide](https://www.bwhguide.com/?utm_source=github&utm_medium=repo&utm_campaign=vps_buying_guide_archive&utm_content=readme_current_resources) |
+| Cloudways English pricing and review notes | [CloudwaysGuide](https://www.cloudwaysguide.com/?utm_source=github&utm_medium=repo&utm_campaign=vps_buying_guide_archive&utm_content=readme_current_resources) |
 
-Pick a datacenter close to your target audience:
+## Safe VPS Buying Checklist
 
-| Audience | Recommended Location |
-|----------|---------------------|
-| China / Asia | Hong Kong, Tokyo, Osaka, Singapore |
-| US / Americas | Los Angeles, New York, Silicon Valley |
-| Europe | Frankfurt, Amsterdam, London |
-| Global | US West + CDN |
+Use this checklist before choosing any VPS provider:
 
-### 2. Network Quality
+1. **Use case**: blog, WordPress, development, proxy-like testing, business site, database, or file service.
+2. **Audience region**: where your users are, and whether you need Asia, US, Europe or global access.
+3. **Network route**: latency, packet loss, peak-hour stability and whether the route matches your target users.
+4. **Plan limits**: CPU, RAM, storage, monthly transfer, bandwidth and upgrade path.
+5. **Billing model**: hourly, monthly, quarterly, annual, renewal price and refund policy.
+6. **Stock and datacenter availability**: final availability should be checked on the actual order page.
+7. **Operational work**: whether you want self-managed VPS work or a managed hosting platform.
 
-For users in China, network routing matters more than location:
+## Provider Choice Notes
 
-- **CN2 GIA** — Best quality, lowest latency, premium price
-- **CN2 GT** — Good quality, moderate price
-- **SoftBank** — Good for Japan routes
-- **Regular / NTT** — Cheapest, may congest during peak hours
+Different providers are useful for different situations:
 
-### 3. Specs & Pricing
+- **Self-managed VPS providers** are better when you want control, SSH access, custom software and lower operating cost.
+- **Managed WordPress / managed cloud providers** are better when you want less server maintenance and more application-level convenience.
+- **Asia-focused route providers** can matter when the target users are mainly in China, Hong Kong, Japan, Singapore or nearby regions.
+- **Hourly-billing cloud providers** are useful for short tests and temporary workloads.
 
-| Use Case | CPU | RAM | Storage | Budget |
-|----------|-----|-----|---------|--------|
-| Personal blog | 1 vCPU | 1 GB | 20 GB | $5-10/mo |
-| Business site | 2 vCPU | 2-4 GB | 40-80 GB | $15-30/mo |
-| E-commerce | 4+ vCPU | 4+ GB | 80+ GB | $30-60/mo |
-| Dev/testing | 1 vCPU | 1 GB | 25 GB | $5-6/mo |
+Avoid choosing only by the cheapest advertised price. The final decision should include route quality, stock, billing cycle, support model and your own maintenance ability.
 
-### 4. Billing Model
+## Test Before You Buy
 
-- **Hourly** — Most flexible, pay for what you use (Vultr, DigitalOcean)
-- **Monthly** — Standard, predictable cost
-- **Annual** — Usually 10-20% discount
-
-## Provider Comparison
-
-| Provider | Starting Price | Datacenters | Billing | Best For |
-|----------|---------------|-------------|---------|----------|
-| [BandwagonHost](https://bwh81.net/aff.php?aff=77647&pid=87) | $49.99/quarter | 13 (CN2 GIA) | Quarterly/Annual | China access, CN2 GIA |
-| [Vultr](https://www.vultr.com/?ref=8985760) | $6/mo | 32 global | Hourly | Developers, testing |
-| [DigitalOcean](https://m.do.co/c/c8274544eaa3) | $6/mo | 15 | Hourly | Beginners, great docs |
-| [Cloudways](https://www.cloudways.com/en/?id=2088428) | $14/mo | 65+ (managed) | Monthly | WordPress, no-ops |
-| [Kinsta](https://kinsta.com/pricing/?kaid=EDDTRFDLYHMZ) | $35/mo | 37 (Google Cloud) | Monthly | Premium WordPress |
-| [Hostwinds](https://www.hostwinds.com/32620.html) | $5.17/mo | 3 | Monthly | Budget, customizable |
-
-## Recommendations by Use Case
-
-### 🌐 Foreign Trade / Cross-border E-commerce
-
-Need fast global access and stable uptime:
-
-1. **[Cloudways](https://www.cloudways.com/en/?id=2088428)** — Managed, auto-scaling, CDN included
-2. **[Vultr](https://www.vultr.com/?ref=8985760)** — Flexible locations, good global coverage
-3. **[BandwagonHost](https://bwh81.net/aff.php?aff=77647&pid=87)** — If you need China backend access
-
-### 📝 WordPress Blog
-
-1. **[Kinsta](https://kinsta.com/pricing/?kaid=EDDTRFDLYHMZ)** — Best WordPress performance, zero maintenance
-2. **[Cloudways](https://www.cloudways.com/en/?id=2088428)** — Good balance of price and features
-3. **[Vultr](https://www.vultr.com/?ref=8985760) + WordOps** — DIY but cheapest
-
-### 💻 Development & Testing
-
-1. **[Vultr](https://www.vultr.com/?ref=8985760)** — Hourly billing, spin up/destroy anytime
-2. **[DigitalOcean](https://m.do.co/c/c8274544eaa3)** — Excellent API and documentation
-
-### 🇭🇰 Fast Access from China (No ICP Filing)
-
-1. **[BandwagonHost Hong Kong](https://bwh81.net/aff.php?aff=77647&pid=95)** — PCCW direct route
-2. **[BandwagonHost Japan](https://bwh81.net/aff.php?aff=77647&pid=134)** — SoftBank route
-3. **[Vultr Tokyo](https://www.vultr.com/?ref=8985760)** — NTT route, budget option
-
-## Speed Test Before You Buy
-
-Always test before committing:
+For route-sensitive VPS usage, test from the network you care about:
 
 ```bash
-# Ping test
 ping -c 10 TARGET_IP
-
-# Route trace
-mtr -r -c 50 TARGET_IP
-
-# Bandwidth test (on server)
-curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3
+traceroute TARGET_IP
 ```
 
-Test IPs for major providers:
+For BandwagonHost / 搬瓦工 route notes, see:
 
-| Provider | Location | Test IP |
-|----------|----------|---------|
-| BandwagonHost | LA DC6 (CN2 GIA-E) | 162.244.241.102 |
-| BandwagonHost | Osaka (SoftBank) | 185.212.59.116 |
-| Vultr | Tokyo | hnd-jp-ping.vultr.com |
-| Vultr | Los Angeles | lax-us-ping.vultr.com |
-| DigitalOcean | Singapore | speedtest-sgp1.digitalocean.com |
+- [bwg-speed-test](https://github.com/devguoo/bwg-speed-test)
+- [BandwagonHost speed test docs](https://devguoo.github.io/bwg-speed-test/)
 
-> More test IPs and tools: [VPS Speed Test Guide](https://www.world-best-vps.com/speed-test.html)
+## Repository Status
 
-## Useful Tools
+This repository is intentionally kept small and archived in practice:
 
-- [linux-server-init](https://github.com/devguoo/linux-server-init) — One-click server setup
-- [vultr-speed-test](https://github.com/devguoo/vultr-speed-test) — Benchmark all Vultr locations
-- [bwg-speed-test](https://github.com/devguoo/bwg-speed-test) — BandwagonHost speed test
-- [vps-benchmark-results](https://github.com/devguoo/vps-benchmark-results) — Real benchmark data
-- [awesome-vps-tools](https://github.com/devguoo/awesome-vps-tools) — Curated tool list
-
-## Learn More
-
-- [VPS Beginner Guide](https://www.world-best-vps.com/guide.html)
-- [6 Providers Compared](https://www.world-best-vps.com/compare.html)
-- [WordPress Hosting Guide](https://www.world-best-vps.com/wordpress-hosting.html)
-- [Foreign Trade VPS Guide](https://www.world-best-vps.com/foreign-trade.html)
+- No live price table is maintained here.
+- No direct affiliate or referral links are included here.
+- No provider ranking is guaranteed to stay current.
+- New VPS notes should be added to the maintained repositories listed above.
 
 ## License
 
 MIT
-
----
-
-⭐ Star this repo if it helped you choose the right VPS!
-
-<!-- updated 2026-03-22 -->
